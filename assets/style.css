@@ -272,6 +272,10 @@ aside article{
     border-bottom: 1px solid #04040434;
     border-radius: 0 0 5px 5px;
 }
+aside article q{
+    color: #28313b;
+    text-shadow: 2px 2px 0 white;
+}
 
 main #contact{
     background: linear-gradient(to right, #a50010, #CF2F4C);

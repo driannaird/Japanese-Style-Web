@@ -1,0 +1,524 @@
+@font-face {
+    font-family: "To Japan";
+    src: url(To\ Japan.ttf);
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Start Header */
+header{
+    font-family: "To Japan", Helvetica, sans-serif;
+}
+nav{
+    background: linear-gradient(to left, #f2f2f0, #fff);
+    border-bottom: 1px solid rgb(228, 228, 228);
+    padding: 5px 0;
+    overflow: auto;
+    position: relative;
+    z-index: 2;
+}
+.container{
+    margin: 0 100px;
+}
+nav .logo{
+    float: left;
+    max-width: 100%;
+    height: auto;
+}
+nav .icon-nav{
+    display: none;
+}
+nav .nav-menu{
+    display: inline;
+    float: right;
+    padding: 8px 0;
+}
+nav li{
+    display: inline;
+    list-style-type: none;
+    margin-left: 20px;
+    padding: 0 10px;
+}
+nav li a{
+    text-decoration: none;
+    color: #040404ad;
+    font-size: 16px;
+}
+nav li a:hover{
+    color: #040404;
+}
+
+.flex-container-column{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    
+    /* Pendukung */
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    text-align: center;
+    z-index: 20;
+}
+.ptn{
+    position: absolute;    
+    opacity: .2;
+}
+.ptn-1{
+    width: 350px;
+    left: -180px;
+    top: -150px;
+}
+.ptn-2{
+    width: 200px;
+    top: 50px;
+    left: 790px;
+}
+.ptn-3{
+    width: 500px;
+    top: 340px;
+    left: 300px;
+}
+.ptn-4{
+    width: 400px;
+    right: -230px;
+    top: 80px;
+}
+.flex-container-row{
+    display: flex;
+    padding: 20px 0;
+    z-index: 1;
+}
+.box-element{
+    flex-grow: 1;
+    margin: auto 0;
+}
+.text-element{
+    margin: 85px 0;
+    color: #fff;
+    text-align: left;
+    min-width: 250px;
+}
+.text-element h1,
+.text-element p,
+.button{
+    max-width: 700px;
+}
+.text-element h1{
+    line-height: 50px;
+}
+.text-element h1 span{
+    color: #CF2F4C;
+}
+.text-element p{
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.text-element .button a{
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(to right, #CF2F4C, #B31F2F);
+    padding: 4px 25px;
+    border-radius: 100px;
+    box-shadow: 2px 2px 1px white;
+}
+.text-element .button a:hover{
+    background: linear-gradient(to right, #B31F2F, #CF2F4C);
+    box-shadow: none;
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+.box-element img{
+    width: 400px;
+}
+/* End Header */
+
+/* Start Main */
+main{
+    background: #f2f2f0;
+}
+#japan-clock{
+    font-family: "To Japan", Helvetica, sans-serif;
+    background: linear-gradient(to right, #a50010, #CF2F4C);
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 20;
+}
+.box-content{
+    background: #e0e0e0;
+    position: relative;
+    overflow: hidden;
+}
+.main-flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2px 0;
+}
+#content{
+    width: 70%;
+    margin: 20px;
+    border: 1px solid #04040434;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#content .card{
+    display: flex;
+    position: relative;
+    padding: 20px 0;
+}
+#content .card h2{
+    font-family: "To Japan", Helvetica, sans-serif;
+    position: absolute;
+    color: white;
+    text-shadow: 0 0 5px #28313b;
+    border: 4px dashed #CF2F4C;
+    box-shadow: 0 0 5px #28313b;
+    padding: 2px 20px;
+    z-index: 1;
+    transform: rotate(340deg);
+}
+.featured-image{
+    max-width: 250px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 20px;
+    box-shadow: 2px 2px 0 2px #B31F2F;
+    border-radius: 20px;
+}
+#content .card p{
+    display: flex;
+    font-size: 24px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    color: #28313b;
+    text-shadow: 2px 2px 0 white;
+    line-height: 25px;
+}
+.card-reverse{
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.card-reverse h2{
+    right: 150px;
+    top: 5px;
+}
+
+aside{
+    width: 30%;
+    padding: 2px 10px;
+    margin-bottom: 20px;
+}
+.profile-card{
+    padding: 5px 20px;
+    text-align: center;
+    border-top: 1px solid #04040434;
+    border-right: 1px solid #04040434;
+    border-left: 1px solid #04040434;
+    border-radius: 5px 5px 0 0;
+    margin-top: 18px;
+}
+.profile{
+    position: relative;
+}
+.profile .ptn-profile{
+    width: 20%;
+    height: 20%;
+    background-color: #a50010;
+    position: absolute;
+    border-radius: 100%;
+    bottom: 20px;
+    right: 20px;
+}
+.profile .ptn-profile2{
+    width: 50%;
+    height: 50%;
+    top: 40px;
+    left: 20px;
+}
+.profile img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+.profile-card h2{
+    font-family: "To Japan", Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    color: #B31F2F;
+    text-shadow: 2px 2px white, 4px 4px 4px black;
+}
+aside article{
+    text-align: justify;
+    font-size: 18px;
+    color: #28313b;
+    padding: 10px;
+    border-right: 1px solid #04040434;
+    border-left: 1px solid #04040434;
+    border-bottom: 1px solid #04040434;
+    border-radius: 0 0 5px 5px;
+}
+
+main #contact{
+    background: linear-gradient(to right, #a50010, #CF2F4C);
+}
+.box-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 30px 20px;
+}
+.box-contact form{
+    display: flex;
+    flex-direction: column;
+}
+.box-contact h2{
+    font-family: "To Japan", Helvetica, sans-serif;
+    font-size: 24px;
+    color: #B31F2F;
+    text-shadow: 1.5px 1.5px #f2f2f0, -1.5px -1.5px black;
+}
+.box-contact input,
+.box-contact textarea,
+.box-contact button{
+    width: 500px;
+    margin-bottom: 5px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+}
+.box-contact button{
+    background-color: #28313b;
+    color: white;
+    cursor: pointer;
+}
+.box-contact button:hover{
+    background-color: #040404;
+    transition: .5s;
+}
+
+footer{
+    background-color: #040404;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.roket{
+    position: fixed;
+    z-index: 2;
+    width: 40px;
+    bottom: 30px;
+    right: 40px;
+    transition: .3s;
+}
+.roket:hover{
+    transform: translate(0, 10px);
+}
+@media screen and (max-width:1200px) {
+    main #content{
+        width: 65%;
+    }
+    .featured-image{
+        width: 150px;
+        height: 200px;
+    }
+    #content .card p{
+        word-spacing: normal;
+        margin: 0;
+        font-size: 18px;
+        align-items: unset;
+        line-height: 20px;
+    }
+    #content .card h2{
+        font-size: 14px;
+        transform: rotate(320deg);
+    }
+    #content .card-reverse h2{
+        right: 90px;
+        top: 20px;
+    }
+
+    aside{
+        width: 35%;
+    }
+}
+@media screen and (max-width:960px) {
+    .container{
+        margin: 0 30px;
+    }
+    nav li a{
+        font-size: 14px;
+    }
+    .text-element{
+        margin: auto 0;
+    }
+    .text-element h1{
+        font-size: 25px;
+        line-height: 40px;
+        margin: 0;
+    }
+    .box-element img{
+        max-width: 300px;
+    }
+
+    #content .card p{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    #content .card-reverse h2{
+        right: 70px;
+    }
+    .featured-image{
+        width: 130px;
+        height: 170px;
+    }
+
+    aside article q{
+        font-size: 12px;
+    }
+    .profile-card h2{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:550px) {
+    .container{
+        margin: 0 20px;
+    }
+    nav li a{
+        font-size: 12px;
+    }
+
+    .main-flex-row{
+        flex-direction: column;
+    }
+    main #content{
+        width: 100%;
+        margin: 20px 0;
+    }
+    main #content .card p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    aside{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #04040434;
+        border-radius: 5px;
+    }
+    aside .profile-card{
+        border: none;
+        padding: 0;
+        padding-bottom: 20px;
+        max-width: 200px;
+    }
+    aside article{
+        border: none;
+        margin: auto 0;
+    }
+    aside article q{
+        font-size: 15px;
+    }
+    .box-contact{
+        padding: 0;
+    }
+    .box-contact input,
+    .box-contact textarea,
+    .box-contact button{
+        width: 100%;
+    }
+}
+@media screen and (max-width:450px) {
+    .container{
+        margin: 0 20px;
+    }
+    nav{
+        position: fixed;
+        width: 100%;
+        bottom: -2px;
+        background: linear-gradient(to right, #B31F2F, #CF2F4C);
+        border-radius: 45px 45px 0 0;
+        z-index: 50;
+    }
+    nav .icon-nav{
+        display: inline;
+    }
+    nav svg{
+        width:40px; 
+        height:40px
+    }
+    nav svg path {
+        fill: #ffffff
+    }
+    nav li a span{
+        display: none;
+    }
+    nav .logo{
+        display: none;
+        float: none;
+    }
+    nav .nav-menu{
+        float: none;
+        text-align: center;
+    }
+    nav ul{
+        margin-left: -65px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #japan-clock h2{
+        font-size: 14px;
+    }
+
+    main #content .card{
+        flex-direction: column;
+    }
+    .featured-image{
+        width: 100%;
+    }
+    #content .card p{
+        margin: 20px 20px 0 20px;
+    }
+    #content .card-reverse h2{
+        right: 180px;
+    }
+    .card-reverse{
+        align-items: end;
+    }
+
+    aside{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        padding-bottom: 80px;
+    }
+    .roket{
+        display: none;
+    }
+}
+@media screen and (max-width:280px) {
+    .featured-image {
+        width: 180px;
+        height: 150px;
+    }
+    #content .card-reverse h2{
+        right: 120px;
+    }
+}

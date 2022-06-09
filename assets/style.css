@@ -14,11 +14,11 @@
     background: linear-gradient(to right, #a50010, #B31F2F);
     border-radius: 150px;
 }
-*{
-    box-sizing: border-box;
-}
 html{
     scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
 }
 body{
     font-family: Helvetica, sans-serif;
@@ -167,8 +167,6 @@ main{
 }
 .box-content{
     background: #e0e0e0;
-    position: relative;
-    overflow: hidden;
 }
 .main-flex-row{
     display: flex;
@@ -203,7 +201,6 @@ main{
     max-width: 250px;
     height: 300px;
     object-fit: cover;
-    object-position: center;
     margin: 0 20px;
     box-shadow: 2px 2px 0 2px #B31F2F;
     border-radius: 20px;
@@ -239,24 +236,6 @@ aside{
     border-left: 1px solid #04040434;
     border-radius: 5px 5px 0 0;
     margin-top: 18px;
-}
-.profile{
-    position: relative;
-}
-.profile .ptn-profile{
-    width: 20%;
-    height: 20%;
-    background-color: #a50010;
-    position: absolute;
-    border-radius: 100%;
-    bottom: 20px;
-    right: 20px;
-}
-.profile .ptn-profile2{
-    width: 50%;
-    height: 50%;
-    top: 40px;
-    left: 20px;
 }
 .profile img{
     width: 100%;

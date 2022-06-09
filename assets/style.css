@@ -2,6 +2,18 @@
     font-family: "To Japan";
     src: url(To\ Japan.woff2);
 }
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+    background: #485461;    
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #a50010, #B31F2F);
+    border-radius: 150px;
+}
 *{
     box-sizing: border-box;
 }
@@ -11,17 +23,20 @@ html{
 body{
     font-family: Helvetica, sans-serif;
     margin: 0;
+    background-color: #040404;
     padding: 0;
 }
 /* Start Header */
 header{
     font-family: "To Japan", Helvetica, sans-serif;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    position: relative;
+    overflow: hidden;
 }
 nav{
     background: transparent;
-    padding: 5px 0;
+    padding: 20px 0;
     overflow: auto;
-    position: relative;
     z-index: 2;
 }
 .container{
@@ -48,22 +63,18 @@ nav li{
 }
 nav li a{
     text-decoration: none;
-    color: #040404ad;
+    color: #f2f2f0;
     font-size: 16px;
 }
 nav li a:hover{
-    color: #040404;
+    color: rgba(255, 255, 255, 0.699);
 }
 
 .flex-container-column{
     display: flex;
     flex-direction: column;
-    position: relative;
-    overflow: hidden;
-    
+
     /* Pendukung */
-    background-color: #485461;
-    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
     text-align: center;
     z-index: 20;
 }
@@ -78,17 +89,17 @@ nav li a:hover{
 }
 .ptn-2{
     width: 200px;
-    top: 50px;
+    top: 115px;
     left: 790px;
 }
 .ptn-3{
     width: 500px;
-    top: 340px;
+    top: 420px;
     left: 300px;
 }
 .ptn-4{
     width: 400px;
-    right: -230px;
+    right: -250px;
     top: 80px;
 }
 .flex-container-row{

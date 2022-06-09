@@ -35,8 +35,6 @@ header{
     z-index: 20;
 }
 nav{
-    background: transparent;
-    padding: 20px 0;
     overflow: auto;
     z-index: 2;
 }

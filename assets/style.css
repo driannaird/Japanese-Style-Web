@@ -1,6 +1,6 @@
 @font-face {
     font-family: "To Japan";
-    src: url(To\ Japan.ttf);
+    src: url(To\ Japan.woff2);
 }
 *{
     box-sizing: border-box;
@@ -18,8 +18,7 @@ header{
     font-family: "To Japan", Helvetica, sans-serif;
 }
 nav{
-    background: linear-gradient(to left, #f2f2f0, #fff);
-    border-bottom: 1px solid rgb(228, 228, 228);
+    background: transparent;
     padding: 5px 0;
     overflow: auto;
     position: relative;

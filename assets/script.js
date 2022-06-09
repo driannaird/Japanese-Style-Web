@@ -1,6 +1,5 @@
-setInterval(japanClock, 500);
-
-function japanClock(){
+// Japanese Clock
+setInterval(() => {
     let time = new Date().toLocaleString('en-US', {timeZone: "Asia/Tokyo"})
     time = new Date(time);
     let hour = time.getHours();
@@ -16,7 +15,7 @@ function japanClock(){
         hour = '0' + time.getHours();
     }
     document.getElementById('clock').innerHTML = hour + ":" + min + ":" + sec
-}
+}, 500);
 
 // Looping artikel jika bernilai ganjil akan di reverse
 const artikel = document.querySelectorAll('.card');
@@ -25,3 +24,18 @@ for(let i = 0; artikel.length > i; i++){
         artikel[i].classList.add('card-reverse');
     }
 }
+
+// Efek scroll
+window.addEventListener("scroll", () => {
+    let elements = document.querySelectorAll(".elemen-transisi");
+    
+    for(let i = 0; i < elements.length; i++){
+        let heightWindow = window.innerHeight;
+        let topElement = elements[i].getBoundingClientRect().top;
+        if(topElement < heightWindow){
+            elements[i].classList.add("transisi");
+        }else{
+            elements[i].classList.remove("transisi");
+        }
+    }
+})

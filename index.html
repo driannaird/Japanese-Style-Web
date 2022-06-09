@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <header>
+    <header id="home">
         <nav>
             <div class="container">
                 <img src="assets/japan-monument-svgrepo-com.svg" alt="logo" class="logo">
     
-                <div class="nav-menu" id="top">
+                <div class="nav-menu">
                     <ul>
                         <li>
-                            <a href="#top">
+                            <a href="#home">
                                 <svg class="icon-nav" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
                                     <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
                                 </svg>
@@ -45,7 +45,7 @@
                 </div>    
             </div>
         </nav>
-        <div class="flex-container-column jumbotron" id="home">
+        <div class="flex-container-column jumbotron">
             <!-- Bagian pattern absolute -->
             <img src="assets/pattern.svg" class="ptn ptn-1">
             <img src="assets/pattern.svg" class="ptn ptn-2">
@@ -74,7 +74,7 @@
         </div>
         <div class="box-content">
             <div class="main-flex-row container">
-                <div id="content">
+                <div id="content" class="elemen-transisi">
                     <article class="card tokyo">
                         <h2>Tokyo</h2>
                         <img src="assets/tokyo.jpg" alt="tokyo" class="featured-image">
@@ -91,7 +91,7 @@
                         <p>Ninja atau Shinobi adalah seorang mata - mata zaman feodal di Jepang yang terlatih dalam seni ninjutsu Jepang. Ninja, seperti samurai, mematuhi peraturan khas mereka sendiri, yang disebut ninpo. Menurut sebagian pengamat ninjutsu, keahlian seorang ninja bukanlah pembunuhan tetapi penyusupan.</p>
                     </article>
                 </div>
-                <aside>
+                <aside class="elemen-transisi">
                     <div class="profile-card">
                         <div class="profile">
                             <div class="ptn-profile"></div>
@@ -109,7 +109,7 @@
         <div id="contact">
             <div class="container box-contact">
                 <h2>Contact Me</h2>
-                <form action="">
+                <form action="" class="elemen-transisi">
                     <input type="text" placeholder="Name">
                     <input type="email" placeholder="Email">
                     <textarea name="text" id="" cols="30" rows="10" placeholder="Message"></textarea>
